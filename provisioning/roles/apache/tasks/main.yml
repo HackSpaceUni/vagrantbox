@@ -1,0 +1,7 @@
+---
+- name: Update apt cache
+  action: apt update_cache=yes
+
+- name: install apache2
+  action: apt pkg=apache2 state=latest
+

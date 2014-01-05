@@ -1,0 +1,10 @@
+---
+- name: Instalacion del servidor vagrantbox
+  hosts: all
+  user: vagrant
+  sudo: True
+
+  vars:
+  roles:
+    #- git
+    - apache

@@ -1,0 +1,12 @@
+---
+# Variables here are applicable to all host groups
+
+git_version: 1.8.4
+python_version: 2.7.5
+haproxy_version: 1.4.24
+redis_version: 2.6.16
+nginx_version: 1.4.2-1
+varnish_version: 3.0.4
+erlang_version: R16B01
+beanstalkd_version: 1.9
+mongod_version: 2.2.5

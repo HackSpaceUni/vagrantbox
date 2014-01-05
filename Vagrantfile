@@ -22,8 +22,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         v.vmx["numvcpus"] = NUMCPUS
     end
 
-    #config.vm.provision :ansible do |ansible|
-        #ansible.playbook = "provisioning/playbook.yml"
-    #end
+    config.vm.provision :ansible do |ansible|
+        ansible.playbook = "provisioning/playbook.yml"
+    end
 
 end
