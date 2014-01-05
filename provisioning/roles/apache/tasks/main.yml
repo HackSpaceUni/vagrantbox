@@ -11,3 +11,6 @@
 
 - name: Install apache2
   apt: pkg=apache2 state=latest force=yes
+
+- name: Install php
+  apt: pkg=php5 state=latest force=yes
