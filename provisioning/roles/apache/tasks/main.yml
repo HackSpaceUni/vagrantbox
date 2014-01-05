@@ -1,7 +1,13 @@
 ---
+
 - name: Update apt cache
-  action: apt update_cache=yes
+  apt: update_cache=yes
 
-- name: install apache2
-  action: apt pkg=apache2 state=latest
+- name: Install python-pycurl
+  apt: pkg=python-pycurl
 
+- name: Add apache2 PPA
+  apt_repository: repo='deb http://ppa.launchpad.net/ondrej/php5/ubuntu precise main' update_cache=yes
+
+- name: Install apache2
+  apt: pkg=apache2 state=latest force=yes
